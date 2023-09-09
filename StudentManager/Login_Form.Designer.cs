@@ -101,6 +101,7 @@
             Loginbtn.TabIndex = 6;
             Loginbtn.Text = "Login";
             Loginbtn.UseVisualStyleBackColor = false;
+            Loginbtn.Click += Loginbtn_Click;
             // 
             // Cancelbtn
             // 
@@ -111,6 +112,7 @@
             Cancelbtn.TabIndex = 7;
             Cancelbtn.Text = "Cancel";
             Cancelbtn.UseVisualStyleBackColor = false;
+            Cancelbtn.Click += Cancelbtn_Click;
             // 
             // Login_Form
             // 
