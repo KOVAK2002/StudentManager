@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Crypto.Agreement.JPake;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,27 @@ namespace StudentManager
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddPict_Click(object sender, EventArgs e)
+        {
+            //slika
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Select image(*.jpg; *.png;*.gif)|*.jpg; *.png;*.gif";
+            if(ofd.ShowDialog() == DialogResult.OK)
+            {
+                    pictureBox1.Image=Image.FromFile(ofd.FileName); 
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

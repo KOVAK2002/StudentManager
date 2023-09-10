@@ -197,6 +197,7 @@
             btnAddPict.TabIndex = 15;
             btnAddPict.Text = "Add picture";
             btnAddPict.UseVisualStyleBackColor = true;
+            btnAddPict.Click += btnAddPict_Click;
             // 
             // btnAdd
             // 
@@ -206,6 +207,7 @@
             btnAdd.TabIndex = 16;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnCancel
             // 
@@ -215,6 +217,7 @@
             btnCancel.TabIndex = 17;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // Add_Student_Form
             // 
