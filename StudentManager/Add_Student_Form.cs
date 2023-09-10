@@ -32,10 +32,10 @@ namespace StudentManager
         {
             //slika
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Select image(*.jpg; *.png;*.gif)|*.jpg; *.png;*.gif";
-            if(ofd.ShowDialog() == DialogResult.OK)
+            ofd.Filter = "Select Image(*.jpg; *.png;*.gif)|*.jpg; *.png;*.gif";
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                    pictureBox1.Image=Image.FromFile(ofd.FileName); 
+                pictureBox1.Image = Image.FromFile(ofd.FileName);
             }
         }
 
@@ -47,6 +47,11 @@ namespace StudentManager
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
