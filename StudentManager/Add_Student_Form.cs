@@ -41,8 +41,53 @@ namespace StudentManager
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            Student student = new Student();
+            string fname = textBox1.Text;
+            string lname = textBox2.Text;
+            DateTime bdate = dateTimePicker1.Value;
+            string phone =textBox3.Text;
+            string adrress=textBox4.Text;
+            string gender = "Male";
+            if(rbFemale.Checked)
+            {
+                gender = "Female";
+            }
+            MemoryStream img=new MemoryStream();
 
+            if (provijeri())
+            {
+                //provjeriti starost studenta
+                 
+                if (student.InsertStudent(fname, lname, bdate, phone, gender, adrress, img))
+                {
+                    MessageBox.Show("New student Added", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show("Error", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Emtpy Fields", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
+        bool provijeri()
+        {
+                if((textBox1.Text.Trim()=="")||
+                    (textBox2.Text.Trim()=="")||
+                    (textBox3.Text.Trim()=="")||
+                    (textBox4.Text.Trim()=="")||
+                    (pictureBox1.Image == null))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {

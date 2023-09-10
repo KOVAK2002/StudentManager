@@ -12,7 +12,7 @@ namespace StudentManager
         MY_DB db = new MY_DB();
         public bool InsertStudent(string fname, string lname, DateTime bdate, string phone, string gender, string address, MemoryStream picture)
         {
-            MySqlCommand command = new MySqlCommand("INSERT INTO `students`(, `FirstName`, `LastName`, `BirthDate`, `Gender`, `Phone`, `Address`, `Image`) VALUES (@fn,@ln,@bd,@gdr,@phn,@addr,@img)", db.GetConnection);
+            MySqlCommand command = new MySqlCommand("INSERT INTO `students`(`FirstName`, `LastName`, `BirthDate`, `Gender`, `Phone`, `Address`, `Image`) VALUES (@fn,@ln,@bd,@gdr,@phn,@addr,@img)", db.GetConnection);
             
             //@fn,@ln,@bd,@gdr,@phn,@addr,@img
             command.Parameters.Add("@fn",MySqlDbType.VarChar).Value = fname;
