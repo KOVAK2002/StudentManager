@@ -37,7 +37,7 @@ namespace StudentManager
             adapter.Fill(table);
             if(table.Rows.Count >0)
             {
-                MessageBox.Show("Yes");
+                this.DialogResult = DialogResult.OK;
             }
             else
             {
