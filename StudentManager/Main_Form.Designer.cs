@@ -30,11 +30,11 @@
         {
             menuStrip1 = new MenuStrip();
             sTUDENTToolStripMenuItem = new ToolStripMenuItem();
-            cOURSEToolStripMenuItem = new ToolStripMenuItem();
-            sCOREToolStripMenuItem = new ToolStripMenuItem();
             addNewStudentToolStripMenuItem = new ToolStripMenuItem();
             editRemoveToolStripMenuItem = new ToolStripMenuItem();
             printToolStripMenuItem = new ToolStripMenuItem();
+            cOURSEToolStripMenuItem = new ToolStripMenuItem();
+            sCOREToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,20 +56,6 @@
             sTUDENTToolStripMenuItem.Size = new Size(135, 39);
             sTUDENTToolStripMenuItem.Text = "STUDENT";
             // 
-            // cOURSEToolStripMenuItem
-            // 
-            cOURSEToolStripMenuItem.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            cOURSEToolStripMenuItem.Name = "cOURSEToolStripMenuItem";
-            cOURSEToolStripMenuItem.Size = new Size(120, 39);
-            cOURSEToolStripMenuItem.Text = "COURSE";
-            // 
-            // sCOREToolStripMenuItem
-            // 
-            sCOREToolStripMenuItem.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            sCOREToolStripMenuItem.Name = "sCOREToolStripMenuItem";
-            sCOREToolStripMenuItem.Size = new Size(103, 39);
-            sCOREToolStripMenuItem.Text = "SCORE";
-            // 
             // addNewStudentToolStripMenuItem
             // 
             addNewStudentToolStripMenuItem.BackColor = SystemColors.ControlDarkDark;
@@ -84,6 +70,7 @@
             editRemoveToolStripMenuItem.Name = "editRemoveToolStripMenuItem";
             editRemoveToolStripMenuItem.Size = new Size(292, 40);
             editRemoveToolStripMenuItem.Text = "Edit / remove";
+            editRemoveToolStripMenuItem.Click += editRemoveToolStripMenuItem_Click;
             // 
             // printToolStripMenuItem
             // 
@@ -91,6 +78,21 @@
             printToolStripMenuItem.Name = "printToolStripMenuItem";
             printToolStripMenuItem.Size = new Size(292, 40);
             printToolStripMenuItem.Text = "Print";
+            printToolStripMenuItem.Click += printToolStripMenuItem_Click;
+            // 
+            // cOURSEToolStripMenuItem
+            // 
+            cOURSEToolStripMenuItem.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            cOURSEToolStripMenuItem.Name = "cOURSEToolStripMenuItem";
+            cOURSEToolStripMenuItem.Size = new Size(120, 39);
+            cOURSEToolStripMenuItem.Text = "COURSE";
+            // 
+            // sCOREToolStripMenuItem
+            // 
+            sCOREToolStripMenuItem.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            sCOREToolStripMenuItem.Name = "sCOREToolStripMenuItem";
+            sCOREToolStripMenuItem.Size = new Size(103, 39);
+            sCOREToolStripMenuItem.Text = "SCORE";
             // 
             // Main_Form
             // 

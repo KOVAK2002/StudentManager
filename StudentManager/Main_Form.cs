@@ -22,5 +22,17 @@ namespace StudentManager
             Add_Student_Form student0 = new Add_Student_Form();
             student0.Show(this);
         }
+
+        private void editRemoveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Edit_Remove student0 = new Edit_Remove();
+            student0.Show(this);
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Print student0 = new Print();
+            student0.Show(this);
+        }
     }
 }
