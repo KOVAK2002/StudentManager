@@ -35,6 +35,7 @@
             printToolStripMenuItem = new ToolStripMenuItem();
             cOURSEToolStripMenuItem = new ToolStripMenuItem();
             sCOREToolStripMenuItem = new ToolStripMenuItem();
+            studentListToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             // 
             // sTUDENTToolStripMenuItem
             // 
-            sTUDENTToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addNewStudentToolStripMenuItem, editRemoveToolStripMenuItem, printToolStripMenuItem });
+            sTUDENTToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addNewStudentToolStripMenuItem, editRemoveToolStripMenuItem, printToolStripMenuItem, studentListToolStripMenuItem });
             sTUDENTToolStripMenuItem.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             sTUDENTToolStripMenuItem.Name = "sTUDENTToolStripMenuItem";
             sTUDENTToolStripMenuItem.Size = new Size(135, 39);
@@ -94,6 +95,13 @@
             sCOREToolStripMenuItem.Size = new Size(103, 39);
             sCOREToolStripMenuItem.Text = "SCORE";
             // 
+            // studentListToolStripMenuItem
+            // 
+            studentListToolStripMenuItem.Name = "studentListToolStripMenuItem";
+            studentListToolStripMenuItem.Size = new Size(292, 40);
+            studentListToolStripMenuItem.Text = "Student List";
+            studentListToolStripMenuItem.Click += studentListToolStripMenuItem_Click;
+            // 
             // Main_Form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -119,5 +127,6 @@
         private ToolStripMenuItem printToolStripMenuItem;
         private ToolStripMenuItem cOURSEToolStripMenuItem;
         private ToolStripMenuItem sCOREToolStripMenuItem;
+        private ToolStripMenuItem studentListToolStripMenuItem;
     }
 }

@@ -34,5 +34,11 @@ namespace StudentManager
             Print student0 = new Print();
             student0.Show(this);
         }
+
+        private void studentListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Student_List_Form student = new Student_List_Form();
+            student.Show(this);
+        }
     }
 }

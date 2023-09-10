@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,19 @@ namespace StudentManager
             }
 
             return true;
+        }
+
+
+        //stvoriti funkciju za dodavanje studenta u refresh listu
+        public DataTable getStudents(MySqlCommand command)
+        {
+            command.Connection = db.GetConnection;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+
+
         }
 
     }
