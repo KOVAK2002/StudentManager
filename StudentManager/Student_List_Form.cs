@@ -22,13 +22,14 @@ namespace StudentManager
             DataGridViewImageColumn piccol = new DataGridViewImageColumn();
             dataGridView1.RowTemplate.Height = 80;
             dataGridView1.DataSource = student.getStudents(cmd);
+            // colum 7, 7 je index u zablici za slike
             piccol = (DataGridViewImageColumn)dataGridView1.Columns[7];
             piccol.ImageLayout = DataGridViewImageCellLayout.Stretch;
             dataGridView1.AllowUserToAddRows = false;
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_DoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
