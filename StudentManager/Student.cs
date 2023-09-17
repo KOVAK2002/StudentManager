@@ -87,7 +87,7 @@ namespace StudentManager
             MySqlCommand command = new MySqlCommand("DELETE FROM `students` WHERE `Id`=@studentId", db.GetConnection);
 
             //@fn,@ln,@bd,@gdr,@phn,@addr,@img
-            command.Parameters.Add("@ID", MySqlDbType.Int32).Value = id;
+            command.Parameters.Add("@studentID", MySqlDbType.Int32).Value = id;
          
             db.openConnection();
             if (command.ExecuteNonQuery() == 1)
