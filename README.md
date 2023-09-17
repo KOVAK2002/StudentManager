@@ -43,9 +43,4 @@ Ovaj projekt možete prilagoditi i proširiti prema vašim potrebama. Evo nekoli
 
 ## Autor
 
-Projekt je razvio [Vaše ime] ([Vaša web stranica ili GitHub profil](link)).
-
-## Licenca
-
-Ovaj projekt je licenciran pod [Licencom] (link do licence). Slobodno ga koristite i prilagodite prema svojim potrebama.
-
+Projekt je razvio Borna Kovačević 
