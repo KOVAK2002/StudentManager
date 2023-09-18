@@ -7,6 +7,7 @@ namespace StudentManager
 {
     internal class Student
     {
+   
         // Definiranje dlegata
         public delegate void StudentOperationEventHandler(object sender, StudentEventArgs e);
 
@@ -140,6 +141,11 @@ namespace StudentManager
             Gender = gender;
             Address = address;
             Picture = picture;
+        }
+
+        public override string ToString()
+        {
+            return $"Student: {FirstName} {LastName}, BirthDate: {BirthDate}, Phone: {Phone}, Gender: {Gender}, Address: {Address}";
         }
     }
 }
